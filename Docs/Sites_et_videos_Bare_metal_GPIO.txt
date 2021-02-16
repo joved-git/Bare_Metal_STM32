@@ -1,0 +1,20 @@
+*Bare Metal STM32 Programming – LED Blink:
+https://freeelectron.ro/bare-metal-stm32-led-blink/
+
+*Bare Metal” STM32 Programming (Part 1): Hello, ARM!
+https://vivonomicon.com/2018/04/02/bare-metal-stm32-programming-part-1-hello-arm/
+
+*Bare Metal” STM32 Programming (Part 3): LEDs and Buttons!:
+https://vivonomicon.com/2018/04/22/bare-metal-stm32-programming-part-3-leds-and-buttons/
+
+*Bare Metal” STM32 Programming (Part 2): Making it to ‘Main’
+https://vivonomicon.com/2018/04/20/bare-metal-stm32-programming-part-2-making-it-to-main/
+
+*Bare metal, FPGA blog:
+https://vivonomicon.com/
+
+*STM32 Bare Metal C - Can't get LED to work
+https://stackoverflow.com/questions/57129323/stm32-bare-metal-c-cant-get-led-to-work
+
+*GPIO Programming from scratch Bare Metal Coding for toggling an LED using STM32L100
+https://www.youtube.com/watch?v=TDHkdqUUMBY

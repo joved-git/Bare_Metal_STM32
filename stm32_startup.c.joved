@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#define SRAM_START	0x20000000U
+#define SRAM_SIZE	(128 * 1024U)	//128 kb of RAM
+#define SRAM_END	((SRAM_START) + (SRAM_SIZE))
+
+#define STACK_START	SRAM_END
+
+void Reset_Handler(void);
+void NMI_Handler(void) __attribute ((alias ("Default_Handler")));
+
+uint32_t vectors[] __attribute__ ((section (".isr_vector")))  = {
+	SRAM_START,
+	(uint32_t) &Reset_Handler,
+	(uint32_t) &NMI_Handler,
+};
+
+void Reset_Handler(void) 
+{
+}
+
+void Default_Handler(void) 
+{
+}
+
+
