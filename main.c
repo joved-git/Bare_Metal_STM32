@@ -17,6 +17,13 @@
 
 int main(){
 
+	//int i_alone;
+	//static int i_value=3;
+	//static int j_alone;
+	//static int jvalue=5;
+	
+	//j_alone=6;
+	
     RCC_AHB1ENR |= RCC_GPIOAEN;				/* Enable clock on PORTA	*/
 	
 	GPIOA_MODER  &= ~(0x3 << (LED_PIN*2));
@@ -29,6 +36,6 @@ int main(){
     while(1){
 		GPIOA_ODR ^= (1 << LED_PIN);		/* Toggle the led			*/
 		
-		for (int i = 0; i < 500000; i++); 	/* Arbitrary delay			*/
+	for (int i = 0; i < 500000; i++) ;		/* Arbitrary delay			*/
 	}
 }

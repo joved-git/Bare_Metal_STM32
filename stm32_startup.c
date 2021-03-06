@@ -241,16 +241,16 @@ uint32_t vectors[] __attribute__((section(".isr_vector")))   = {
 
 void Default_Handler(void)
 {
-	while(1);
+	while (1);
 }
 
 void Reset_Handler(void)
 {
 	//copy .data section to SRAM
-	uint32_t size = (uint32_t)&_edata - (uint32_t)&_sdata;
+	uint32_t size = (uint32_t) &_edata - (uint32_t)&_sdata;
 	
-	uint8_t *pDst = (uint8_t*)&_sdata; 			/* SRAM 	*/
-	uint8_t *pSrc = (uint8_t*)&_la_data; 		/* Flash 	*/
+	uint8_t* pSrc = (uint8_t*)&_la_data; 			/* src:  Flash 	*/
+	uint8_t *pDst = (uint8_t*) &_sdata; 			/* dest: SRAM 	*/
 	
 	for(uint32_t i =0 ; i < size ; i++)
 	{
@@ -258,8 +258,8 @@ void Reset_Handler(void)
 	}
 	
 	//Init. the .bss section to zero in SRAM
-	size = (uint32_t)&_ebss - (uint32_t)&_sbss;
-	pDst = (uint8_t*)&_sbss;
+	size = (uint32_t) &_ebss - (uint32_t) &_sbss;
+	pDst = (uint8_t*) &_sbss;
 	for(uint32_t i =0 ; i < size ; i++)
 	{
 		*pDst++ = 0;
