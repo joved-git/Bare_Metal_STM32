@@ -1,8 +1,8 @@
 
-#include<stdint.h>
+#include <stdint.h>
 
 #define SRAM_START  0x20000000U
-#define SRAM_SIZE   (20U * 1024U) //128KB
+#define SRAM_SIZE   (20U * 1024U) 			 /*   20 kb   */
 #define SRAM_END    ((SRAM_START) + (SRAM_SIZE))
 
 #define STACK_START   SRAM_END
@@ -22,7 +22,7 @@ int main(void);
 //void __libc_init_array(void);
 
 
-/* function prototypes of STM32F407x system exception and IRQ handlers */
+/* function prototypes of STM32F103C8x system exception and IRQ handlers */
 
 void Reset_Handler(void);
 
