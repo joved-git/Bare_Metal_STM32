@@ -6,8 +6,9 @@ Card included:
   -STM32
   -STM32
   
-To change card, checkout:
-  -stm32f104 for BluePill
-  -
-  -
+To change card, use checkout:
+  $ checkout stm32f104 for BluePill
+  $ checkout stm32f407
+  $ checkout stm32f446
+  
 Please see the documentation () to learn how to prepare your first bare metal blink prog.
