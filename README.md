@@ -8,7 +8,7 @@ Card included:
   -Nucleo-446RE (MCU STM32F446RE)
   
 To change card, use checkout:
-  $ checkout blueill    for BluePill board
+  $ checkout bluepill   for BluePill board
   $ checkout stm32f407  (not yet finished, do not use)
   $ checkout blackpill  (not yet included, do not use)
   $ checkout nucle446re for Nucleo-446RE board
