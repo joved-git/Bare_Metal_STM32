@@ -8,9 +8,9 @@ Card included:
   -Nucleo-446RE (MCU STM32F446RE)
   
 To change card, use checkout:
-  $ checkout stm32f104 for BluePill board
-  $ checkout stm32f407 (not yet finished, do not use)
-  $ checkout stm32f411 (not yet included, do not use)
-  $ checkout stm32f446 for Nucleo-446RE board
+  $ checkout blueill    for BluePill board
+  $ checkout stm32f407  (not yet finished, do not use)
+  $ checkout blackpill  (not yet included, do not use)
+  $ checkout nucle446re for Nucleo-446RE board
   
 Please see the documentation (./doc/how_to_create_blink_from_scratch.txt) to learn how to prepare your first bare metal blink prog.
