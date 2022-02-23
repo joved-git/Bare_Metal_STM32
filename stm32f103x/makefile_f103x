@@ -10,6 +10,7 @@ all: final.elf
 
 final.elf: main.o stm32_startup.o
 	$(CC) $(LDFLAGS) $^ -o $@
+
 clean:
 	rm -rf *.o *.elf *.map
 
