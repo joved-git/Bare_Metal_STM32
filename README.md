@@ -13,4 +13,4 @@ To change card, use checkout:
   $ checkout blackpill   (not yet included, do not use)
   $ checkout nucleo446re for Nucleo-446RE board
   
-Please see the documentation (./doc/howto_create_blink_from_scratch.txt) to learn how to prepare your first bare metal blink prog.
+Please see the documentation (./docs/howto_create_blink_from_scratch.txt) to learn how to prepare your first bare metal blink prog.
